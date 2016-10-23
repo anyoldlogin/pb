@@ -1,0 +1,9 @@
+<h2>Articles</h2>
+  <ul class="items">
+    <li *ngFor="let article of articles"
+      [class.selected]="isSelected(article)"
+      (click)="onSelect(article)">
+      {{ article.title }}
+    </li>
+  </ul>
+  
